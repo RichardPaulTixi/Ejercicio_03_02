@@ -13,14 +13,20 @@ public class Ejercicio_03_02 {
 
     public static void main(String[] args) {
         //System.out.println("Hello World!");
-        /*var v1= new Ventana1("Inscripcion");
+        var v1= new Ventana1("Inscripcion");
         v1.setVisible(true);
         
         var v2= new Ventana2("Datos Personales");
-        v2.setVisible(true);*/
+        v2.setVisible(true);
         
         var v3= new Ventana3("Informacion de Carrera");
         v3.setVisible(true);
+        
+        var v4= new Ventana4("Crear Cupo");
+        v4.setVisible(true);
+        
+        var v5= new Ventana5("");
+        v5.setVisible(true);
         
     }
 }

@@ -30,7 +30,7 @@ public class Ventana2 extends JFrame{
 
     public Ventana2(String title) throws HeadlessException {
         super(title);
-        this.setSize(500, 600);
+        this.setSize(500, 700);
         this.setLocation(30, 30);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.IniciarComponentes();
@@ -95,14 +95,14 @@ public class Ventana2 extends JFrame{
     
     public void IniciarTexto(){
         this.jTextField1= new ArrayList<>();
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
-        this.jTextField1.add(new JTextField());
+        this.jTextField1.add(new JTextField("Tixi Uyaguari"));
+        this.jTextField1.add(new JTextField("Richard Paul"));
+        this.jTextField1.add(new JTextField("Ecuatoriana"));
+        this.jTextField1.add(new JTextField("Masculono"));
+        this.jTextField1.add(new JTextField("rtixiu@est.ups.edu.ec"));
+        this.jTextField1.add(new JTextField("06/06/97"));
+        this.jTextField1.add(new JTextField("4093159"));
+        this.jTextField1.add(new JTextField("03395673591"));
         this.jTextField1.add(new JTextField());
         this.jTextField1.get(0).setColumns(15);
         this.jTextField1.get(1).setColumns(15);

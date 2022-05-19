@@ -29,7 +29,7 @@ public class Ventana3 extends JFrame{
 
     public Ventana3(String title) throws HeadlessException {
         super(title);
-        this.setSize(500, 600);
+        this.setSize(400, 400);
         this.setLocation(30, 30);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.IniciarComponentes();
