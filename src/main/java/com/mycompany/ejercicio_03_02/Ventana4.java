@@ -4,10 +4,12 @@
  */
 package com.mycompany.ejercicio_03_02;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author HP
  */
-public class Ventana4 {
+public class Ventana4 extends JFrame{
     
 }
