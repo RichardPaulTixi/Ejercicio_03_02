@@ -74,6 +74,7 @@ public class Ventana1 extends JFrame{
         this.jpanellist.get(1).add(this.jlabellist1.get(1));
         this.jpanellist.get(2).add(this.jlabellist1.get(2));
         this.jpanellist.get(3).add(this.jlabellist1.get(3));
+        this.jlabellist1.get(0).setForeground(Color.WHITE);
         
     }
     
