@@ -8,6 +8,7 @@ import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -26,6 +27,7 @@ public class Ventana4 extends JFrame{
     private List<JTextField> jTextField4;
     private List<JComboBox> jComboBox4;
     private JCheckBox jCheckBox4;
+    private List<JButton> jButton4;
 
     public Ventana4(String title) throws HeadlessException {
         super(title);
@@ -38,16 +40,18 @@ public class Ventana4 extends JFrame{
     
     public void IniciarComponentes(){
         this.jPanel4=new JPanel();
-        this.jPanel4.setLayout(new GridLayout(13,1));
+        this.jPanel4.setLayout(new GridLayout(14,1));
         this.IniciarPaneles();
         this.IniciarEtiquetas();
         this.IniciarTexto();
         this.IniciarCombos();
         this.IniciarCheck();
+        this.IniciarBotones();
     }
     
     public void IniciarPaneles(){
         this.jPanelList4=new ArrayList<>();
+        this.jPanelList4.add(new JPanel());
         this.jPanelList4.add(new JPanel());
         this.jPanelList4.add(new JPanel());
         this.jPanelList4.add(new JPanel());
@@ -75,6 +79,7 @@ public class Ventana4 extends JFrame{
         this.jPanel4.add(this.jPanelList4.get(10));
         this.jPanel4.add(this.jPanelList4.get(11));
         this.jPanel4.add(this.jPanelList4.get(12));
+        this.jPanel4.add(this.jPanelList4.get(13));
     }
     
     public void IniciarEtiquetas(){
@@ -121,6 +126,7 @@ public class Ventana4 extends JFrame{
         this.jTextField4.add(new JTextField("Grupo1"));
         this.jTextField4.get(7).setColumns(25);
         this.jTextField4.add(new JTextField(""));
+        
         this.jTextField4.get(8).setColumns(10);
         this.jPanelList4.get(0).add(this.jTextField4.get(0));
         this.jPanelList4.get(1).add(this.jTextField4.get(1));
@@ -159,6 +165,13 @@ public class Ventana4 extends JFrame{
         this.jPanelList4.get(11).add(this.jCheckBox4);
     }
     
+    public void IniciarBotones(){
+        this.jButton4=new ArrayList<>();
+        this.jButton4.add(new JButton("Guardar"));
+        this.jButton4.add(new JButton("Cancelar"));
+        this.jPanelList4.get(13).add(this.jButton4.get(0));
+        this.jPanelList4.get(13).add(this.jButton4.get(1));
+    }
     
     
 }
